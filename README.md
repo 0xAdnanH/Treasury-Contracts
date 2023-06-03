@@ -1,9 +1,18 @@
-**The Treasure contract is a Solidity smart contract that allows depositors to participate in a treasure hunt by making a deposit and revealing a secret word.
-If a depositor successfully reveals the secret word, they become the owner of the treasure and can claim the contract's balance.
+## Installation
 
-**Features and Functionality :
-Depositors can make a deposit by sending a minimum of 1 ether to the contract.
-Each depositor can deposit only once.
-Depositors must store a commitment for the secret word using a complex key.
-Depositors can reveal the secret word to claim the treasure if the revealed word matches their stored commitment and the secret word.
-The contract's balance can be claimed by the winner who successfully reveals the secret word.
+### cloning the repository
+
+Alternatively you can also clone the repository and install its dependencies to start using the smart contracts.
+
+```bash
+$ git clone https://github.com/0xAdnanH/Treasury-Contracts.git
+$ cd ./Treasury-Contracts
+$ npm install
+```
+
+
+## Explanation 
+
+The treasury contract has a risk of Front Run attacks , so it uses the commit-reveal-scheme to prevent this security case .
+
+Participants should deposit minimum 1 ether to participate in the competition . The winner will get all the eth in the contract if he knows the secret word that its hash is set in the constructor .  
