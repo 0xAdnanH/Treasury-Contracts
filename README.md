@@ -14,7 +14,7 @@ The project has the following goals:
 
 ## Technicalities of the Project
 
-- Only **Depositors Can Commit and Reveal:** The contract only permits depositors to participate in the commit and reveal process, where the prize is ultimately sent.
+- Only **Depositors Can Commit and Reveal:** The contract only permits depositors to participate in the commit and reveal process, where the prize is ultimately sent, restricted using a modifier.
   
 - **Minimum Deposit Requirement:** To engage in the contest, a minimum deposit of 1 ether is necessary.
 
